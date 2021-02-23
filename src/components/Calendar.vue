@@ -52,7 +52,6 @@ export default {
         const second = this.dates[1].setDate(this.dates[1].getDate() - range)
         Vue.set(this.dates, 0, new Date(first))
         Vue.set(this.dates, 1, new Date(second))
-        console.log(this.dates)
       }
     },
 
@@ -63,7 +62,6 @@ export default {
         const second = this.dates[1].setDate(this.dates[1].getDate() + range)
         Vue.set(this.dates, 0, new Date(first))
         Vue.set(this.dates, 1, new Date(second))
-        console.log(this.dates)
       }
     }
   }
