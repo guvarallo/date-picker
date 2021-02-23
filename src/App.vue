@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Date Picker</h1>
+    <Calendar />
   </div>
 </template>
 
@@ -8,12 +9,15 @@
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
-
 Vue.use(Buefy)
+
+import Calendar from './components/Calendar'
 
 export default {
   name: 'App',
-  components: {}
+  components: {
+    Calendar
+  }
 }
 </script>
 
